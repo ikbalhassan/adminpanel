@@ -1,0 +1,298 @@
+
+
+body{
+    background: black;
+}
+
+.card{
+    background:#191c24 ;
+}
+
+#sidebar {
+  
+    background: #191c24;
+    padding: 0;
+   min-width: 244px;
+   max-width: 244px;
+    z-index: 11;
+    color: white;
+    transition: .3s ease;
+   position: relative; 
+}
+
+.dropdown-menu a:hover{
+    background:0;
+}
+
+#topbar{
+    margin-left: 244px;
+    height: 70px;
+    background: #191c24;
+    transition: .3s ease;
+}
+
+.dark{
+    background:#191c24 ;
+}
+
+#brand{
+    height: 70px;
+    min-width: 244px;
+    max-width: 244px;
+    background:#191c24 ;
+    transition: .3s ease;
+}
+#sidebarUl{
+    margin-top: 70px;
+}
+
+#content-wrapper{
+    margin-top: 70px;
+}
+
+#ami{
+    width: 31px;
+    height: 31px;
+}
+
+.profile-desc {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.6rem 1.17rem;
+    line-height: 1.25;
+}
+
+
+#one li a{
+   padding-left: 20px;
+   color: rgb(161, 152, 152);
+   font-weight: 400;
+   transition: none;
+}
+#one{
+    margin-right:10px ;
+}
+
+#one > li :hover{
+    background: black;
+    border-radius: 0 30px 30px 0; 
+    color: white;
+  
+}
+.fa-tachometer-alt{
+    color:#8f5fe8;
+}
+.fa-biohazard{
+color:#ffab00;
+}
+.fa-jedi{
+    color: #fc424a;
+}
+.fa-table{
+    color: #0090e7;
+}
+.fa-chart-bar{
+    color: #00d25b;
+}
+.fa-id-badge{
+    color: #8f5fe8;
+}
+.fa-skating{
+    color: #ffab00;
+}
+.fa-id-card{
+    color:#fc424a;
+}
+.d{
+   
+    font-size: 0.8125rem;
+    line-height: 1;
+    background: rgba(108, 114, 147, 0.2);
+    width: 31px;
+    height: 31px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+#card12{
+    background:linear-gradient(to left, #d41459, #911a6c);
+    border-radius: 6px;
+}
+.icon-box-success {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 37px;
+    background: rgba(0, 210, 91, 0.11);
+    border-radius: 7px;
+     color: #0fc75e;
+    }
+.icon-box-danger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 37px;
+    background: rgba(238, 11, 23, 0.11);
+    border-radius: 7px;
+    color: #e20d1f;
+    }
+
+    .bg-gray-dark{
+   background: #12151e;
+    }
+
+    .fab{
+        width: 31px;
+        height: 29px;
+       background: #911a6c;
+       display:flex;
+       align-items: center;
+       justify-content: center;
+    }
+
+    .fa-laptop{
+        font-size: 45px;
+    }
+
+    .table td {
+        padding: 0.9375rem;
+        vertical-align: top;
+        border-top: 1px solid #2c2e33;
+    }
+
+ 
+  #my  img{
+    width: 100%;
+    height: 50%;
+}
+
+#sidebar.activee{
+    margin-left: 0px;
+    transition: .3s ease;
+   
+}
+
+
+
+@media (max-width:990px){
+    #sidebar{
+       
+        margin-left: -244px;
+        transition: .3s ease;
+        position: fixed;
+       height: 100vh;
+       overflow: auto;
+      
+    }
+    #brand{
+        background:#191c24 ;
+        min-width: 70px;
+        max-width: 70px;
+    }
+    #brand span{
+        display: none;
+    }
+    #topbar{
+        margin-left: 70px;
+       
+    }
+   #topbar button{
+       float: right;
+   }
+}
+
+@media (min-width:990px){
+    #sidebar.actv{
+        margin-left: -160px;
+        transition: .3s ease;
+       
+    }
+
+    #sidebar.actv #brand{
+       transition: .3s ease;
+        min-width: 84px;
+        max-width: 84px;
+    }
+    #topbar.activv{
+       margin-left: 84px;
+       transition: .3s ease;
+    }
+    #sidebar.actv #topbar{
+       
+       margin-left: 84px;
+       transition: .3s ease;
+    }
+
+    #sidebar.actv #brand span{
+        display: none;
+    }
+   
+   
+    #sidebar.actv #one{
+        padding-right:0;
+    }
+
+    
+    #sidebar.actv ul{
+        width: 100%;
+        align-items:flex-end;
+        transition: .3s ease;
+       
+    }
+
+    #sidebar.actv .nav-item a{
+        padding-right: 20px;
+        
+     }
+
+    #sidebar.actv span{
+        display: none;
+    }
+
+
+    #sidebar.actv #ami{
+        margin-right: 10px;
+    }
+    
+    #sidebar.actv .profile-desc .profile-name{
+          display: none;
+        }
+        #sidebar.actv .profile-desc a{
+            display: none;
+        
+        }
+   
+}
+
+@media (max-width:1255px){
+   #updatebtn{
+       line-height: 1;
+       font-size: 12px;
+   }
+}
+
+@media (max-width:375px){
+    #middle h4{
+        font-size: 10px;
+       
+    }
+
+    #updatebtn{
+        font-size: 10px;
+        line-height: 9px;
+        padding: 1px 2px;
+       
+    }
+}
+
+@media (max-width:768px){
+  #content-wrapper{
+        padding: 1.875rem 1.75rem;}
+}
